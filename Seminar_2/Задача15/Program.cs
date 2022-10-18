@@ -3,18 +3,18 @@
 
 Console.Write("Введите цифру:");
 int num = Convert.ToInt32(Console.ReadLine());
-if (num > 7 || num < 1)
+if (num >= 1 && num <= 7)
+{
+    if (num == 6 | num ==7)
+    {
+        Console.WriteLine("Этот день недели - выходной.");
+    }
+    else
+    {
+    Console.WriteLine("Этот день недели - рабочий.");
+    }
+}
+else
 {
     Console.WriteLine("Эта цифра не соответсвует дню недели!");
-}
-else
-{
-    if (num == 6 || num ==7)
-{
-    Console.WriteLine("Этот день недели - выходной.");
-}
-else
-{
-    Console.WriteLine("Этот день недели - рабочий.");
-}
 }
