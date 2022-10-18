@@ -13,9 +13,9 @@ if (num <=99)
 else
 {
     while (num > 999)
-{
+    {
     num /=10;
-}
+    }
 int result = num % 10;
 Console.WriteLine(result);
 }
