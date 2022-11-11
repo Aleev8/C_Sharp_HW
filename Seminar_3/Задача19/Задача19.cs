@@ -4,6 +4,7 @@
 23432 -> да
 12821 -> да */
 
+
 bool CheckForPolynomial(string number)
 {
     
