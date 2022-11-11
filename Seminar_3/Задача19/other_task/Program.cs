@@ -5,6 +5,7 @@
 12821 -> да */
 
 //Принимает на вход пятизначное число
+/*
 bool IsPolynomial(int number)
 {
     string strNumber = number.ToString();
@@ -22,15 +23,15 @@ int number = Convert.ToInt32(Console.ReadLine());
 if (number <= 9999 || number >= 10000)
 {
     Console.WriteLine("Некорректное число. Введите (положительное) пятизначное число");
+    return;
 }
-else
+
+bool isPolynomial = IsPolynomial(number);
+if (isPolynomial == true)
 {
-    bool isPolynomial = IsPolynomial(number);
-    if (isPolynomial == true)
-    {
     Console.WriteLine("это число полиндром!");
-    }
-    
 }
+    
+*/
 
 //Это решение не работает до конца !
