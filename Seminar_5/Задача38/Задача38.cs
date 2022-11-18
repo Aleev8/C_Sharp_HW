@@ -20,14 +20,14 @@ double DifferenceMinMax(double[] array)
         }
     }
     double result = max - min;
-    return result;
+    return Math.Round(result, 3);
 }
 
 double[] array = new double[8];
 
 for (int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random().NextDouble();
+    array[i] = new Random().NextDouble() * new Random().Next(1, 10);
 }
 Console.WriteLine("[{0}]", string.Join("; ", array));
 Console.WriteLine($"Разница между MAX и MIN элементом массива = {DifferenceMinMax(array)}");
